@@ -19,5 +19,5 @@ while [ $# -gt 0 ]; do
 done
 
 set -x
-sed -ri "$sedExpr"$'\n' "$conf"
+sed -r "$sedExpr"$'\n' "$conf" > "$conf"
 update-exim4.conf -v

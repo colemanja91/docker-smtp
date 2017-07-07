@@ -12,7 +12,7 @@ COPY entrypoint.sh /bin/
 COPY set-exim4-update-conf /bin/
 
 RUN chmod a+x /bin/entrypoint.sh && \
-    chmod a+x /bin/set-exim4-update-conf
+    chmod a+xw /bin/set-exim4-update-conf
 
 EXPOSE 25
 ENTRYPOINT ["/bin/entrypoint.sh"]
